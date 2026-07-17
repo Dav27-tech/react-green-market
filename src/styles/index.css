@@ -1,0 +1,253 @@
+/* ---------------------------------------- */
+/* Google Font                              */
+/* ---------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ---------------------------------------- */
+/* Global Styles                            */
+/* ---------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* ---------------------------------------- */
+/* Hero Section                             */
+/* ---------------------------------------- */
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-video-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.77vh;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 56.25vw;
+  transform: translate(-50%, -50%);
+  border: none;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  color: white;
+}
+
+.hero h1 {
+  text-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+/* ---------------------------------------- */
+/* Navbar                                   */
+/* ---------------------------------------- */
+
+.navbar {
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* ---------------------------------------- */
+/* Cards                                    */
+/* ---------------------------------------- */
+
+.card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  min-height: 55px;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+/* ---------------------------------------- */
+/* Benefits                                 */
+/* ---------------------------------------- */
+
+#benefits i {
+  transition: transform 0.3s ease;
+}
+
+#benefits .card:hover i {
+  transform: scale(1.15);
+}
+
+/* ---------------------------------------- */
+/* Buttons                                  */
+/* ---------------------------------------- */
+
+.btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------- */
+/* Search Form                              */
+/* ---------------------------------------- */
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: none;
+}
+
+/* ---------------------------------------- */
+/* Newsletter                               */
+/* ---------------------------------------- */
+
+.input-group .btn {
+  white-space: nowrap;
+}
+
+/* ---------------------------------------- */
+/* Footer                                   */
+/* ---------------------------------------- */
+
+footer {
+  background-color: #212529;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+footer i {
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+footer i:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+/* ---------------------------------------- */
+/* Responsive                               */
+/* ---------------------------------------- */
+
+@media (max-width: 992px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 55vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+}
