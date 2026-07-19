@@ -8,14 +8,12 @@ export default function Hero() {
       <div className="hero-video-container">
         <iframe
           className="hero-video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/7Dxu97R077w?si=mpT6zrNYG2KEI61X"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          src="https://www.youtube.com/embed/7Dxu97R077w?autoplay=1&mute=1&loop=1&playlist=7Dxu97R077w&controls=0&rel=0&modestbranding=1"
+          title="Organic Farm"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
       <div className="hero-overlay"></div>
