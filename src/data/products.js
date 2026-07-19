@@ -4,7 +4,7 @@ const products = [
     name: "Organic Avocados",
     category: "Fresh Fruits",
     price: 4.99,
-    image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=60",
+    image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600",
   },
   {
     id: 2,
